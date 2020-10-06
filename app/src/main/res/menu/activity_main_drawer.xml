@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/booked_doctor"
+            android:icon="@drawable/ic_vademecum"
+            android:title="Doctors in NY"
+            />
+        <item
+            android:id="@+id/upcomming_appointments"
+            android:icon="@drawable/ic_clipboard"
+            android:title="Upcomming Appointments"
+            />
+
+        <item
+            android:id="@+id/news"
+            android:icon="@drawable/ic_calendar"
+            android:title="News and Health Guide"
+            />
+
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_danger"
+            android:title="About Mapple Doc"
+            />
+
+        <item
+            android:id="@+id/terms"
+            android:icon="@drawable/ic_locked"
+            android:title="Terms of use"
+            />
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings"
+            />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout"
+            />
+
+    </group>
+
+
+
+
+
+</menu>

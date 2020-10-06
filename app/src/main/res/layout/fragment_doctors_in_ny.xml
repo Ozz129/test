@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prueba.SearchDoctor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15">
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@android:color/white"
+                android:text="Doctors in NY"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:id="@+id/searchI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search"
+                android:paddingTop="50dp"
+                android:layout_marginTop="10dp"
+                android:tint="@android:color/white"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/searchI"
+                android:layout_below="@+id/titulo"
+                android:textColor="@android:color/white"
+                android:text="Find specific doctor"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppinsmedium"
+                android:paddingTop="10dp"
+                android:textSize="15dp"
+                />
+
+            <Spinner
+                android:id="@+id/spNy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/titulo">
+
+            </Spinner>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="75"
+            android:background="@android:color/white"
+            android:padding="20dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/logotrans"
+                        />
+
+                    <TextView
+                        android:id="@+id/nombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jackub Antalik"
+                        android:layout_toRightOf="@+id/img"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:textSize="20dp"
+                        android:textColor="#1863E8"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/star"
+                        android:text="5.0"/>
+
+                    <ImageView
+                        android:id="@+id/star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/ic_star"
+                        android:tint="#4DFFFFFF"/>
+
+                    <TextView
+                        android:id="@+id/prof"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cariologist, Chiropractor, Dentis"
+                        android:layout_below="@+id/nombre"
+                        android:layout_toRightOf="@+id/img"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:textSize="10dp"/>
+
+                   <ImageView
+                       android:id="@+id/place"
+                       android:layout_below="@+id/prof"
+                       android:layout_toRightOf="@+id/img"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_placeholder"/>
+
+                    <TextView
+                        android:id="@+id/dir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="454, Upper Manhattan, NY"
+                        android:layout_below="@+id/prof"
+                        android:paddingTop="5dp"
+                        android:layout_toRightOf="@+id/place"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:textSize="10dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_videocam_filled_tool"
+                        android:tint="#4DFFFFFF"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/logotrans"
+                        />
+
+                    <TextView
+                        android:id="@+id/nombre2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aurelien Salomon"
+                        android:layout_toRightOf="@+id/img2"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:textSize="20dp"
+                        android:textColor="#1863E8"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/star2"
+                        android:text="4.5"/>
+
+                    <ImageView
+                        android:id="@+id/star2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/ic_star"
+                        android:tint="#4DFFFFFF"/>
+
+                    <TextView
+                        android:id="@+id/prof2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ophthalmologist, Optometrist"
+                        android:layout_below="@+id/nombre2"
+                        android:layout_toRightOf="@+id/img2"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:textSize="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/place2"
+                        android:layout_below="@+id/prof2"
+                        android:layout_toRightOf="@+id/img2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_placeholder"/>
+
+                    <TextView
+                        android:id="@+id/dir2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="467, Western, NY"
+                        android:layout_below="@+id/prof2"
+                        android:paddingTop="5dp"
+                        android:layout_toRightOf="@+id/place2"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:textSize="10dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_videocam_filled_tool"
+                        android:tint="#1863E8"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>
